@@ -1,0 +1,792 @@
+{
+  "total": 20,
+  "open": 0,
+  "overall": {
+    "count": 20,
+    "tta": {
+      "n": 20,
+      "mean": 6.0,
+      "median": 5.5,
+      "p90": 11.0
+    },
+    "ttm": {
+      "n": 20,
+      "mean": 41.8,
+      "median": 36.5,
+      "p90": 66.0
+    },
+    "ttr": {
+      "n": 20,
+      "mean": 68.2,
+      "median": 62.0,
+      "p90": 87.0
+    },
+    "cadence_on_time": 101,
+    "cadence_gaps": 108,
+    "cadence_adherence": 0.935,
+    "reminders": 6
+  },
+  "by_severity": {
+    "sev1": {
+      "count": 6,
+      "tta": {
+        "n": 6,
+        "mean": 3.2,
+        "median": 2.0,
+        "p90": 4.0
+      },
+      "ttm": {
+        "n": 6,
+        "mean": 37.5,
+        "median": 34.0,
+        "p90": 37.0
+      },
+      "ttr": {
+        "n": 6,
+        "mean": 61.0,
+        "median": 57.5,
+        "p90": 75.0
+      },
+      "cadence_on_time": 44,
+      "cadence_gaps": 50,
+      "cadence_adherence": 0.88,
+      "reminders": 5
+    },
+    "sev2": {
+      "count": 8,
+      "tta": {
+        "n": 8,
+        "mean": 5.4,
+        "median": 6.0,
+        "p90": 6.0
+      },
+      "ttm": {
+        "n": 8,
+        "mean": 48.5,
+        "median": 35.5,
+        "p90": 96.0
+      },
+      "ttr": {
+        "n": 8,
+        "mean": 76.2,
+        "median": 64.5,
+        "p90": 127.0
+      },
+      "cadence_on_time": 44,
+      "cadence_gaps": 45,
+      "cadence_adherence": 0.978,
+      "reminders": 1
+    },
+    "sev3": {
+      "count": 5,
+      "tta": {
+        "n": 5,
+        "mean": 9.2,
+        "median": 11.0,
+        "p90": 14.0
+      },
+      "ttm": {
+        "n": 5,
+        "mean": 36.2,
+        "median": 39.0,
+        "p90": 44.0
+      },
+      "ttr": {
+        "n": 5,
+        "mean": 63.0,
+        "median": 61.0,
+        "p90": 70.0
+      },
+      "cadence_on_time": 13,
+      "cadence_gaps": 13,
+      "cadence_adherence": 1.0,
+      "reminders": 0
+    },
+    "sev4": {
+      "count": 1,
+      "tta": {
+        "n": 1,
+        "mean": 11.0,
+        "median": 11.0,
+        "p90": 11.0
+      },
+      "ttm": {
+        "n": 1,
+        "mean": 42.0,
+        "median": 42.0,
+        "p90": 42.0
+      },
+      "ttr": {
+        "n": 1,
+        "mean": 73.0,
+        "median": 73.0,
+        "p90": 73.0
+      },
+      "cadence_on_time": 0,
+      "cadence_gaps": 0,
+      "cadence_adherence": null,
+      "reminders": 0
+    }
+  },
+  "by_service": {
+    "invoices-api": 3,
+    "webhooks": 3,
+    "checkout": 2,
+    "payments-api": 2,
+    "auth": 2,
+    "notifications": 2,
+    "search": 2,
+    "web-app": 2,
+    "reporting": 2
+  },
+  "action_items": {
+    "total": 40,
+    "done": 34,
+    "completion": 0.85,
+    "median_days_to_close": 10.9
+  },
+  "weekly": [
+    {
+      "week": 1,
+      "start": 1783356960.0,
+      "count": 6
+    },
+    {
+      "week": 2,
+      "start": 1783961760.0,
+      "count": 1
+    },
+    {
+      "week": 3,
+      "start": 1784566560.0,
+      "count": 1
+    },
+    {
+      "week": 4,
+      "start": 1785171360.0,
+      "count": 2
+    },
+    {
+      "week": 5,
+      "start": 1785776160.0,
+      "count": 0
+    },
+    {
+      "week": 6,
+      "start": 1786380960.0,
+      "count": 1
+    },
+    {
+      "week": 7,
+      "start": 1786985760.0,
+      "count": 2
+    },
+    {
+      "week": 8,
+      "start": 1787590560.0,
+      "count": 2
+    },
+    {
+      "week": 9,
+      "start": 1788195360.0,
+      "count": 1
+    },
+    {
+      "week": 10,
+      "start": 1788800160.0,
+      "count": 3
+    },
+    {
+      "week": 11,
+      "start": 1789404960.0,
+      "count": 0
+    },
+    {
+      "week": 12,
+      "start": 1790009760.0,
+      "count": 1
+    }
+  ],
+  "incidents": [
+    {
+      "id": "INC-1001",
+      "title": "checkout errors",
+      "severity": "sev1",
+      "service": "checkout",
+      "state": "resolved",
+      "channel_id": "C000007",
+      "declared_at": 1783357080.0,
+      "detected_at": 1783356960.0,
+      "identified_at": 1783357980.0,
+      "mitigated_at": 1783358700.0,
+      "resolved_at": 1783360440.0,
+      "roles": {
+        "commander": "hiro",
+        "comms": "elif",
+        "ops": "jonah"
+      },
+      "affected_users": 11387,
+      "action_items_open": 1,
+      "action_items_total": 3,
+      "has_postmortem": true,
+      "tta": 2.0,
+      "ttm": 29.0,
+      "ttr": 58.0,
+      "cadence": [
+        9,
+        9
+      ]
+    },
+    {
+      "id": "INC-1002",
+      "title": "card payments failing",
+      "severity": "sev3",
+      "service": "payments-api",
+      "state": "resolved",
+      "channel_id": "C000064",
+      "declared_at": 1783512060.0,
+      "detected_at": 1783511340.0,
+      "identified_at": 1783513080.0,
+      "mitigated_at": 1783513680.0,
+      "resolved_at": 1783514880.0,
+      "roles": {
+        "commander": "lena",
+        "comms": "dmitri",
+        "ops": "grace"
+      },
+      "affected_users": 182,
+      "action_items_open": 1,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 12.0,
+      "ttm": 39.0,
+      "ttr": 59.0,
+      "cadence": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "INC-1003",
+      "title": "users signed out after login",
+      "severity": "sev1",
+      "service": "auth",
+      "state": "resolved",
+      "channel_id": "C000099",
+      "declared_at": 1783563180.0,
+      "detected_at": 1783562940.0,
+      "identified_at": 1783564500.0,
+      "mitigated_at": 1783565100.0,
+      "resolved_at": 1783566360.0,
+      "roles": {
+        "commander": "farid",
+        "comms": "jonah",
+        "ops": "kofi"
+      },
+      "affected_users": 11445,
+      "action_items_open": 1,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 4.0,
+      "ttm": 36.0,
+      "ttr": 57.0,
+      "cadence": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "INC-1004",
+      "title": "email provider outage",
+      "severity": "sev1",
+      "service": "notifications",
+      "state": "resolved",
+      "channel_id": "C000152",
+      "declared_at": 1783689780.0,
+      "detected_at": 1783689720.0,
+      "identified_at": 1783692120.0,
+      "mitigated_at": 1783693680.0,
+      "resolved_at": 1783694940.0,
+      "roles": {
+        "commander": "ben",
+        "comms": "lena",
+        "ops": "hiro"
+      },
+      "affected_users": 10927,
+      "action_items_open": 0,
+      "action_items_total": 1,
+      "has_postmortem": true,
+      "tta": 1.0,
+      "ttm": 66.0,
+      "ttr": 87.0,
+      "cadence": [
+        8,
+        10
+      ]
+    },
+    {
+      "id": "INC-1005",
+      "title": "new checkout flow failing",
+      "severity": "sev2",
+      "service": "checkout",
+      "state": "resolved",
+      "channel_id": "C000204",
+      "declared_at": 1783771020.0,
+      "detected_at": 1783770660.0,
+      "identified_at": 1783771980.0,
+      "mitigated_at": 1783772640.0,
+      "resolved_at": 1783774440.0,
+      "roles": {
+        "commander": "grace",
+        "comms": "dmitri",
+        "ops": "kofi"
+      },
+      "affected_users": 2256,
+      "action_items_open": 1,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 6.0,
+      "ttm": 33.0,
+      "ttr": 63.0,
+      "cadence": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "INC-1006",
+      "title": "stale invoice totals shown",
+      "severity": "sev1",
+      "service": "invoices-api",
+      "state": "resolved",
+      "channel_id": "C000245",
+      "declared_at": 1783938480.0,
+      "detected_at": 1783938420.0,
+      "identified_at": 1783939980.0,
+      "mitigated_at": 1783940640.0,
+      "resolved_at": 1783942920.0,
+      "roles": {
+        "commander": "lena",
+        "comms": "grace",
+        "ops": "hiro"
+      },
+      "affected_users": 5602,
+      "action_items_open": 0,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 1.0,
+      "ttm": 37.0,
+      "ttr": 75.0,
+      "cadence": [
+        7,
+        9
+      ]
+    },
+    {
+      "id": "INC-1007",
+      "title": "duplicate reminder emails",
+      "severity": "sev3",
+      "service": "notifications",
+      "state": "resolved",
+      "channel_id": "C000308",
+      "declared_at": 1784068860.0,
+      "detected_at": 1784068620.0,
+      "identified_at": 1784069580.0,
+      "mitigated_at": 1784069940.0,
+      "resolved_at": 1784072280.0,
+      "roles": {
+        "commander": "ines",
+        "comms": "chioma",
+        "ops": "lena"
+      },
+      "affected_users": 550,
+      "action_items_open": 0,
+      "action_items_total": 1,
+      "has_postmortem": true,
+      "tta": 4.0,
+      "ttm": 22.0,
+      "ttr": 61.0,
+      "cadence": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "INC-1008",
+      "title": "invoice creation returning 500s",
+      "severity": "sev2",
+      "service": "invoices-api",
+      "state": "resolved",
+      "channel_id": "C000349",
+      "declared_at": 1784626380.0,
+      "detected_at": 1784626080.0,
+      "identified_at": 1784627700.0,
+      "mitigated_at": 1784628360.0,
+      "resolved_at": 1784629680.0,
+      "roles": {
+        "commander": "ines",
+        "comms": "jonah",
+        "ops": "lena"
+      },
+      "affected_users": 2652,
+      "action_items_open": 0,
+      "action_items_total": 3,
+      "has_postmortem": true,
+      "tta": 5.0,
+      "ttm": 38.0,
+      "ttr": 60.0,
+      "cadence": [
+        4,
+        4
+      ]
+    },
+    {
+      "id": "INC-1009",
+      "title": "search latency over 3 seconds",
+      "severity": "sev3",
+      "service": "search",
+      "state": "resolved",
+      "channel_id": "C000401",
+      "declared_at": 1785341700.0,
+      "detected_at": 1785341400.0,
+      "identified_at": 1785342600.0,
+      "mitigated_at": 1785343320.0,
+      "resolved_at": 1785344760.0,
+      "roles": {
+        "commander": "lena",
+        "comms": "grace",
+        "ops": "ines"
+      },
+      "affected_users": 531,
+      "action_items_open": 0,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 5.0,
+      "ttm": 32.0,
+      "ttr": 56.0,
+      "cadence": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "INC-1010",
+      "title": "old pricing shown on the dashboard",
+      "severity": "sev1",
+      "service": "web-app",
+      "state": "resolved",
+      "channel_id": "C000442",
+      "declared_at": 1785579960.0,
+      "detected_at": 1785579420.0,
+      "identified_at": 1785580920.0,
+      "mitigated_at": 1785581340.0,
+      "resolved_at": 1785582360.0,
+      "roles": {
+        "commander": "grace",
+        "comms": "kofi",
+        "ops": "elif"
+      },
+      "affected_users": 2997,
+      "action_items_open": 0,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 9.0,
+      "ttm": 32.0,
+      "ttr": 49.0,
+      "cadence": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "INC-1011",
+      "title": "card processor timeouts",
+      "severity": "sev2",
+      "service": "payments-api",
+      "state": "resolved",
+      "channel_id": "C000498",
+      "declared_at": 1786530120.0,
+      "detected_at": 1786529760.0,
+      "identified_at": 1786531260.0,
+      "mitigated_at": 1786535520.0,
+      "resolved_at": 1786537380.0,
+      "roles": {
+        "commander": "ines",
+        "comms": "elif",
+        "ops": "kofi"
+      },
+      "affected_users": 1987,
+      "action_items_open": 0,
+      "action_items_total": 1,
+      "has_postmortem": true,
+      "tta": 6.0,
+      "ttm": 96.0,
+      "ttr": 127.0,
+      "cadence": [
+        6,
+        6
+      ]
+    },
+    {
+      "id": "INC-1012",
+      "title": "dashboard fails to load",
+      "severity": "sev3",
+      "service": "web-app",
+      "state": "resolved",
+      "channel_id": "C000544",
+      "declared_at": 1787005320.0,
+      "detected_at": 1787004480.0,
+      "identified_at": 1787006640.0,
+      "mitigated_at": 1787007120.0,
+      "resolved_at": 1787008680.0,
+      "roles": {
+        "commander": "ana",
+        "comms": "chioma",
+        "ops": "lena"
+      },
+      "affected_users": 541,
+      "action_items_open": 1,
+      "action_items_total": 3,
+      "has_postmortem": true,
+      "tta": 14.0,
+      "ttm": 44.0,
+      "ttr": 70.0,
+      "cadence": [
+        2,
+        2
+      ]
+    },
+    {
+      "id": "INC-1013",
+      "title": "webhook deliveries delayed",
+      "severity": "sev2",
+      "service": "webhooks",
+      "state": "resolved",
+      "channel_id": "C000586",
+      "declared_at": 1787324940.0,
+      "detected_at": 1787324700.0,
+      "identified_at": 1787325840.0,
+      "mitigated_at": 1787326320.0,
+      "resolved_at": 1787328660.0,
+      "roles": {
+        "commander": "ines",
+        "comms": "kofi",
+        "ops": "dmitri"
+      },
+      "affected_users": 1172,
+      "action_items_open": 0,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 4.0,
+      "ttm": 27.0,
+      "ttr": 66.0,
+      "cadence": [
+        7,
+        7
+      ]
+    },
+    {
+      "id": "INC-1014",
+      "title": "irrelevant search results",
+      "severity": "sev4",
+      "service": "search",
+      "state": "resolved",
+      "channel_id": "C000636",
+      "declared_at": 1787593620.0,
+      "detected_at": 1787592960.0,
+      "identified_at": 1787595060.0,
+      "mitigated_at": 1787595480.0,
+      "resolved_at": 1787597340.0,
+      "roles": {
+        "commander": "kofi",
+        "comms": "jonah",
+        "ops": "dmitri"
+      },
+      "affected_users": 7,
+      "action_items_open": 0,
+      "action_items_total": 1,
+      "has_postmortem": true,
+      "tta": 11.0,
+      "ttm": 42.0,
+      "ttr": 73.0,
+      "cadence": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "INC-1015",
+      "title": "report exports timing out",
+      "severity": "sev2",
+      "service": "reporting",
+      "state": "resolved",
+      "channel_id": "C000671",
+      "declared_at": 1787744880.0,
+      "detected_at": 1787744760.0,
+      "identified_at": 1787745720.0,
+      "mitigated_at": 1787746260.0,
+      "resolved_at": 1787747160.0,
+      "roles": {
+        "commander": "lena",
+        "comms": "kofi",
+        "ops": "hiro"
+      },
+      "affected_users": 1114,
+      "action_items_open": 0,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 2.0,
+      "ttm": 25.0,
+      "ttr": 40.0,
+      "cadence": [
+        6,
+        6
+      ]
+    },
+    {
+      "id": "INC-1016",
+      "title": "DNS failures for webhook targets",
+      "severity": "sev2",
+      "service": "webhooks",
+      "state": "resolved",
+      "channel_id": "C000724",
+      "declared_at": 1788542280.0,
+      "detected_at": 1788541920.0,
+      "identified_at": 1788543600.0,
+      "mitigated_at": 1788547920.0,
+      "resolved_at": 1788549780.0,
+      "roles": {
+        "commander": "lena",
+        "comms": "ana",
+        "ops": "elif"
+      },
+      "affected_users": 2875,
+      "action_items_open": 0,
+      "action_items_total": 3,
+      "has_postmortem": true,
+      "tta": 6.0,
+      "ttm": 100.0,
+      "ttr": 131.0,
+      "cadence": [
+        9,
+        9
+      ]
+    },
+    {
+      "id": "INC-1017",
+      "title": "invoice API slow for large tenants",
+      "severity": "sev2",
+      "service": "invoices-api",
+      "state": "resolved",
+      "channel_id": "C000780",
+      "declared_at": 1788861540.0,
+      "detected_at": 1788861180.0,
+      "identified_at": 1788862500.0,
+      "mitigated_at": 1788862980.0,
+      "resolved_at": 1788863940.0,
+      "roles": {
+        "commander": "farid",
+        "comms": "lena",
+        "ops": "grace"
+      },
+      "affected_users": 3720,
+      "action_items_open": 0,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 6.0,
+      "ttm": 30.0,
+      "ttr": 46.0,
+      "cadence": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "INC-1018",
+      "title": "SSO logins failing",
+      "severity": "sev3",
+      "service": "auth",
+      "state": "resolved",
+      "channel_id": "C000818",
+      "declared_at": 1789052460.0,
+      "detected_at": 1789051800.0,
+      "identified_at": 1789053780.0,
+      "mitigated_at": 1789054440.0,
+      "resolved_at": 1789055940.0,
+      "roles": {
+        "commander": "ana",
+        "comms": "kofi",
+        "ops": "grace"
+      },
+      "affected_users": 836,
+      "action_items_open": 1,
+      "action_items_total": 2,
+      "has_postmortem": true,
+      "tta": 11.0,
+      "ttm": 44.0,
+      "ttr": 69.0,
+      "cadence": [
+        3,
+        3
+      ]
+    },
+    {
+      "id": "INC-1019",
+      "title": "webhook signatures rejected",
+      "severity": "sev1",
+      "service": "webhooks",
+      "state": "resolved",
+      "channel_id": "C000855",
+      "declared_at": 1789377300.0,
+      "detected_at": 1789377180.0,
+      "identified_at": 1789377960.0,
+      "mitigated_at": 1789378680.0,
+      "resolved_at": 1789379580.0,
+      "roles": {
+        "commander": "hiro",
+        "comms": "ines",
+        "ops": "dmitri"
+      },
+      "affected_users": 10372,
+      "action_items_open": 0,
+      "action_items_total": 3,
+      "has_postmortem": true,
+      "tta": 2.0,
+      "ttm": 25.0,
+      "ttr": 40.0,
+      "cadence": [
+        8,
+        8
+      ]
+    },
+    {
+      "id": "INC-1020",
+      "title": "PDF invoices render blank",
+      "severity": "sev2",
+      "service": "reporting",
+      "state": "resolved",
+      "channel_id": "C000924",
+      "declared_at": 1790181300.0,
+      "detected_at": 1790180820.0,
+      "identified_at": 1790182740.0,
+      "mitigated_at": 1790183160.0,
+      "resolved_at": 1790185440.0,
+      "roles": {
+        "commander": "ana",
+        "comms": "chioma",
+        "ops": "lena"
+      },
+      "affected_users": 3205,
+      "action_items_open": 0,
+      "action_items_total": 1,
+      "has_postmortem": true,
+      "tta": 8.0,
+      "ttm": 39.0,
+      "ttr": 77.0,
+      "cadence": [
+        7,
+        7
+      ]
+    }
+  ]
+}

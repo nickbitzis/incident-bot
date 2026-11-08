@@ -1,0 +1,20 @@
+name: scale-service
+title: Scale a service out
+description: Add replicas when a service is saturated. Default doubles the replica count.
+params:
+  service: {required: true, description: Service to scale}
+  replicas: {required: false, default: x2, description: Target count or x<factor>}
+steps:
+  - id: health
+    description: Check the error rate before scaling
+    action: health.check
+    args: {service: "{service}"}
+  - id: scale
+    description: Change the replica count
+    action: service.scale
+    args: {service: "{service}", replicas: "{replicas}"}
+    confirm: true
+  - id: verify
+    description: Check the error rate after scaling
+    action: health.check
+    args: {service: "{service}"}

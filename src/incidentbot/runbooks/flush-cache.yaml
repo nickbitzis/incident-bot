@@ -1,0 +1,15 @@
+name: flush-cache
+title: Flush a service cache
+description: Drop cached entries when stale or corrupt data is being served.
+params:
+  service: {required: true, description: Service whose cache to flush}
+steps:
+  - id: flush
+    description: Flush every key in the service cache
+    action: cache.flush
+    args: {service: "{service}"}
+    confirm: true
+  - id: verify
+    description: Check the error rate after the flush
+    action: health.check
+    args: {service: "{service}"}

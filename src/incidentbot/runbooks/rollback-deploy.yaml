@@ -1,0 +1,20 @@
+name: rollback-deploy
+title: Roll back the last deploy
+description: Check what is live, roll back to the previous version, then check health.
+params:
+  service: {required: true, description: Service to roll back}
+  to: {required: false, default: previous, description: Version to roll back to}
+steps:
+  - id: status
+    description: Show the live and previous versions
+    action: deploy.status
+    args: {service: "{service}"}
+  - id: rollback
+    description: Roll back the deploy
+    action: deploy.rollback
+    args: {service: "{service}", to: "{to}"}
+    confirm: true
+  - id: verify
+    description: Check the error rate after the rollback
+    action: health.check
+    args: {service: "{service}"}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>incidentbot</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <span class="brand">incidentbot <span class="muted">for Tillwave</span></span>
+    <nav>
+      <a href="#/chat" data-r="chat">Chat</a>
+      <a href="#/incidents" data-r="incidents">Incidents</a>
+      <a href="#/status" data-r="status">Status page</a>
+      <a href="#/metrics" data-r="metrics">Metrics</a>
+    </nav>
+    <span id="clock" class="muted">Times in UTC</span>
+  </header>
+  <main id="app"></main>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+name: toggle-flag
+title: Turn a feature flag off (or on)
+description: Kill switch for a feature that is misbehaving. Defaults to turning it off.
+params:
+  flag: {required: true, description: Feature flag name}
+  enabled: {required: false, default: "false", description: true or false}
+  service: {required: false, default: "", description: Service the flag affects}
+steps:
+  - id: toggle
+    description: Change the flag
+    action: flag.set
+    args: {flag: "{flag}", enabled: "{enabled}", service: "{service}"}
+    confirm: true
